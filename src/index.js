@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import PrimeraApp from './PrimeraApp';
+import CounterApp from'../src/CounterApp/CounterApp'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <PrimeraApp saludo="Hola, soy Goku" subtitulo='Ahora soy otro subtitulo'/> */}
+    <CounterApp value ={0}></CounterApp>
   </React.StrictMode>,
   document.getElementById('root')
 );
